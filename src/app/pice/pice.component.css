@@ -1,0 +1,84 @@
+div.veliki {
+    width:100%;
+    height: 100%;
+    overflow-x:hide;  
+    
+}
+ 
+
+ul{ padding-left:3%;}
+
+ul#horizontal li{
+    display: inline;
+    list-style-type: none;
+  }
+
+li{
+   width:25%;
+   height: 50%;
+   margin-bottom:2%;}
+ 
+   input::-webkit-outer-spin-button,
+   input::-webkit-inner-spin-button {
+     -webkit-appearance: none;
+     margin: 0;
+   }
+   
+   /* Firefox */
+   input[type=number] {
+    -moz-appearance: textfield;
+     border-radius: 0%;
+     
+   } 
+   
+.picence {
+    display: inline-block;
+    width:27%;
+    height:50%;
+    border-radius: 0%;
+    background-color:white;
+    padding:2%;
+    margin-bottom:2%;
+    margin-right: 2%;
+    text-align: center;
+    line-height: 1vw;
+    box-shadow: rgb(116, 61, 82) 1px 1px 1px;}
+
+p{  font-family: Roboto, "Helvetica Neue", sans-serif;
+    margin-top:5%;
+    font-size:1.8vw;
+    margin-bottom:2%;
+    }
+
+    i{ font-family: Roboto, "Helvetica Neue", sans-serif;
+        font-size:1.6vw;}
+
+
+img { 
+    width: 40%;
+    max-height: auto;
+    }
+
+input { 
+    text-align: center;
+    margin-top:5%;
+    width:20%;
+     }
+
+button.krug { 
+  padding:0;
+  width: 15%; 
+  margin:5px; 
+  font-size:1.7vw; 
+}
+
+mat-form-field.mat-form-field {
+    width:20%;
+    font-size: 1.7vw;
+    text-align: center;
+    
+    
+  }
+  
+
+ 

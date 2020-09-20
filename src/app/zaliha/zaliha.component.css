@@ -1,0 +1,13 @@
+div {
+    display:flex;
+    flex-wrap: wrap;
+    margin-top:2%;
+    height: 100%;
+    width: 100%;
+    background-color:#f8f4f1;
+    overflow-y:scroll;
+    justify-content: center;
+}
+
+
+

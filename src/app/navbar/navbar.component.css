@@ -1,0 +1,21 @@
+.demo-card-square.mdl-card {
+    width: 320px;
+    height: 320px;
+  }
+  .demo-card-square > .mdl-card__title {
+    color: #fff;
+    background:
+      url('/assets/barista.jpg') bottom right 15% no-repeat #46B6AC;
+  }
+  .page-content {
+    height:100%;
+    width:auto;
+    
+  }
+  .mdl-layout__tab-panel {
+    height:94%;
+    width:auto;
+   overflow:hidden;
+  }
+  a#disabled {pointer-events: none;
+    cursor: default;}

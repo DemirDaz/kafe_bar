@@ -1,0 +1,35 @@
+h1 {
+    margin-top:2%;
+    margin-bottom:2%;
+    color:rgb(255, 81, 119);
+    /*text-shadow: rgba(48, 48, 48, 0.664) 0px 1px 10px ;
+    */
+    
+    text-align: center;
+}
+div {
+    
+    height:80%;
+    width:100%;
+    margin:0;
+    
+}
+
+button {
+    display: flex; 
+    height:7%;
+    width: 13%;
+    border-radius: 0%;
+    align-items: center;
+    
+    justify-content: center;
+    text-align: center;
+    
+    font-size:1em;
+    margin:auto;
+  
+}
+mat-divider{
+    margin-top:1%;
+    margin-bottom:1%;
+}

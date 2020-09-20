@@ -1,0 +1,52 @@
+    .slobodan {
+        display:block;
+        width:100%; height:auto;
+        transition: transform .2s;
+    }
+
+    .slobodan:hover {
+        cursor:pointer;
+        transform: scale(1.5); 
+        -ms-transform: scale(1.5);
+        
+    }
+
+    .zauzet {
+        display:block;
+        width: 100%; height:auto;
+        transition: transform .2s;
+    }
+
+    .zauzet:hover {
+        cursor:pointer;
+        transform: scale(1.5); 
+        -ms-transform: scale(1.5);
+    }
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+	 table { table-layout: fixed;margin:auto; height: 100%; width:auto;}
+     td { width: 7.69%;}
+	 tr { height:10%;}
+    
+     
+     img{
+      display:block; height: 100%; width:auto; margin:auto;
+     }
+
+    
+    
+
+	
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }

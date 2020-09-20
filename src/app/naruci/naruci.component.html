@@ -1,0 +1,38 @@
+<div style="background-image:url('../assets/kaficIzgledBlur.jpg');
+background-size:70% 90%;
+background-repeat: no-repeat;
+background-position:center;">
+
+
+<button mat-fab *ngIf="moze" (click)="getRacuni()">
+  <mat-icon>attach_money</mat-icon>
+</button>
+ <button mat-fab *ngIf="moze" (click)="savePorudzbina()" >
+  +<mat-icon>receipt</mat-icon>
+</button>
+<button mat-fab *ngIf="moze" (click)="return()">
+  <mat-icon>arrow_back</mat-icon>
+</button>
+
+
+    <table  *ngIf="moze" class="mat-elevation-z8">
+        <tr style="height: 20%;">
+            <th ></th><th >Naziv</th><th >Tip</th><th >Cena</th><th >Na stanju</th><th >Naruči</th>
+        </tr>
+        <tr  *ngFor="let k of kafic">
+          <td><img src={{k.fotografijaPica}} /></td>
+          <td>{{k.imePica}}</td>
+          <td>{{k.tipPica}}</td>
+          <td>{{k.prodajnaCena}} rsd.</td>
+          <td>{{k.kolicina}}</td>
+          <td>
+            <button class="krug" mat-mini-fab (click)="removeFromPorudzbina(k)" onclick="this.parentNode.querySelector('.kolicina').stepDown()"><mat-icon>remove</mat-icon></button>
+           <mat-form-field  appearance="standard">
+           <input matInput type="number" #kolicina class="kolicina" readonly="true" value="0" min="0" max={{k.kolicina}}/> 
+           </mat-form-field>
+           <button class="krug" mat-mini-fab (click)="addToPorudzbina(k)" onclick="this.parentNode.querySelector('.kolicina').stepUp()"><mat-icon>add</mat-icon></button> 
+            </td>
+        </tr>
+</table>
+   
+    </div>

@@ -1,0 +1,10 @@
+<h1 mat-dialog-title>Vaš račun! </h1>
+<div mat-dialog-content (ngModel)="datah">
+  <p>Hvala i dodjite nam opet!</p>
+  
+    <p>Vaš račun iznosi: {{datah}}</p>
+  
+</div>
+<div mat-dialog-actions>
+  <button mat-button [mat-dialog-close]="data.ukupno" cdkFocusInitial>Naplaćeno!</button>
+</div>

@@ -1,0 +1,66 @@
+<div *ngIf="getAuth()" class="mdl-layout mdl-js-layout mdl-layout--fixed-header
+            mdl-layout--fixed-tabs" >
+  <header class="mdl-layout__header" style="background-color:#a37474">
+    
+    <!-- Tabs -->
+    <div *ngIf="sme" class="mdl-layout__tab-bar mdl-js-ripple-effect" 
+    style="background-color:	#70495c" >
+      <a href="#kafic" class="mdl-layout__tab is-active">Kafić</a>
+      <a href="#nabavka" class="mdl-layout__tab  ">Nabavka</a>
+      <a href="#administracija" *ngIf="checkAdmin()" class="mdl-layout__tab" >Administracija</a>
+    </div>
+   
+  </header>
+  <div class="mdl-layout__drawer"  style="overflow:hidden;">
+    <ng-template [ngIf]="konobar">
+    <span class="mdl-layout-title">Profil Radnika</span>
+    <div  class="demo-card-square mdl-card mdl-shadow--2dp">
+      <div class="mdl-card__title mdl-card--expand">
+        <h2 class="mdl-card__title-text">{{konobar.pIme}}</h2>
+      </div>
+      <!-- DODAJ PODATKE IZ GET KONOBAR OVDE-->
+      <div class="mdl-card__supporting-text" >
+        {{konobar.brMob}}   <br>
+        {{konobar.email}} <br>
+        {{konobar.adresaStan}} <br><br>
+      </div>
+      <div class="mdl-card__actions mdl-card--border">
+      <a (click)="logout()" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+          Log out
+        </a>
+      </div>
+    </div>
+  </ng-template>
+</div>
+  <main class="mdl-layout__content">
+    <section class="mdl-layout__tab-panel is-active" id="kafic">
+      <div class="page-content">
+        <app-layout></app-layout>
+      </div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="nabavka">
+      <div class="page-content">
+        <app-porudzbina></app-porudzbina><!-- Your content goes here --></div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="administracija" >
+      <div class="page-content">
+        <app-administracija></app-administracija>
+      </div>
+    </section>
+
+   
+   <footer class="mdl-layout__title" style="position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 6%;
+   background-color:#e4d6cd;">
+    <div class="mdl-layout__header-row" style="height: 100%;" >
+      <!-- Title -->
+      <img src="assets/ThisCaffeLogo.png" style="height:100%;margin-left:-5%;"/>
+      <span class="mdl-layout-title" style="color:white;text-shadow: 2px 2px	#96807d;">Kafe Bar</span> <span class="mdl-layout-title" style="position: absolute;right:8%;color:white;text-shadow: 2px 2px	#96807d;">©Dem</span>
+    </div>
+  </footer>
+  </main>
+</div>
+   

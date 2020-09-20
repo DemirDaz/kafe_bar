@@ -1,0 +1,28 @@
+<div class="veliki">
+  
+   
+      <button mat-fab color="accent" (click)="izmeniZalihu()" style="border-radius: 0%;width:20%;margin-left:40%;margin-top:1.5%">
+         <span style="font-size:1.9vw">Poruči</span> 
+        </button>
+      <ul id="horizontal">
+         <li *ngFor="let pice of pica">
+            <div class="picence">
+            <img src={{pice.fotografijaPica}} >
+            
+            <p>{{pice.imePica}}</p>
+            <i>{{pice.tipPica}}</i> <br>
+            
+            <button class="krug" mat-mini-fab (click)="smanji(pice)" onclick="this.parentNode.querySelector('.kolicina').stepDown()"><span style="margin: auto">-</span></button>
+           
+             <!--
+             -->
+            <mat-form-field  appearance="standard">
+            <input matInput type="number" #kolicina class="kolicina" onKeyPress="return false" value="0" min="0" /> 
+            </mat-form-field>
+            <button class="krug" mat-mini-fab (click)="uvecaj(pice)" onclick="this.parentNode.querySelector('.kolicina').stepUp()"><span style="margin: auto">+</span></button> 
+         
+         </div>
+         </li>
+      </ul>
+      
+</div>
